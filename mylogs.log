@@ -1,0 +1,30 @@
+12-06-2023 09:10:39 DEBUG AnnotationConfigApplicationContext:629 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4fcd19b3
+12-06-2023 09:10:39 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+12-06-2023 09:10:39 DEBUG ClassPathBeanDefinitionScanner:435 - Identified candidate component class: file [E:\DevOpsWorkspace\My03AOP\target\classes\ap\springaop\aspects\LoggingAspect.class]
+12-06-2023 09:10:39 DEBUG ClassPathBeanDefinitionScanner:435 - Identified candidate component class: file [E:\DevOpsWorkspace\My03AOP\target\classes\ap\springaop\pojo\User.class]
+12-06-2023 09:10:39 DEBUG ClassPathBeanDefinitionScanner:435 - Identified candidate component class: file [E:\DevOpsWorkspace\My03AOP\target\classes\ap\springaop\service\CustomerService.class]
+12-06-2023 09:10:39 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+12-06-2023 09:10:39 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+12-06-2023 09:10:39 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+12-06-2023 09:10:39 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+12-06-2023 09:10:40 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'myConfiguration'
+12-06-2023 09:10:40 DEBUG ReflectiveAspectJAdvisorFactory:258 - Found AspectJ method: public void ap.springaop.aspects.LoggingAspect.logAround(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+12-06-2023 09:10:40 DEBUG ReflectiveAspectJAdvisorFactory:258 - Found AspectJ method: public void ap.springaop.aspects.LoggingAspect.logBefore(org.aspectj.lang.JoinPoint)
+12-06-2023 09:10:40 DEBUG ReflectiveAspectJAdvisorFactory:258 - Found AspectJ method: public void ap.springaop.aspects.LoggingAspect.logAfter(org.aspectj.lang.JoinPoint)
+12-06-2023 09:10:40 DEBUG ReflectiveAspectJAdvisorFactory:258 - Found AspectJ method: public void ap.springaop.aspects.LoggingAspect.logAfterReturning(org.aspectj.lang.JoinPoint,java.lang.Object)
+12-06-2023 09:10:40 DEBUG ReflectiveAspectJAdvisorFactory:258 - Found AspectJ method: public void ap.springaop.aspects.LoggingAspect.logAfterThrow(org.aspectj.lang.JoinPoint,java.lang.Throwable)
+12-06-2023 09:10:40 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'asp'
+12-06-2023 09:10:40 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'user'
+12-06-2023 09:10:40 DEBUG DefaultListableBeanFactory:225 - Creating shared instance of singleton bean 'service'
+12-06-2023 09:10:40 INFO  LoggingAspect:25 - @@ logBefore is running ##
+12-06-2023 09:10:40 INFO  LoggingAspect:26 - join point is running before request method: addCustomer
+12-06-2023 09:10:40 INFO  LoggingAspect:31 - ## logAfter is running ##
+12-06-2023 09:10:40 INFO  LoggingAspect:32 - join point is running after request method: addCustomer
+12-06-2023 09:10:40 INFO  LoggingAspect:37 - ## logAfterReturning is running ##
+12-06-2023 09:10:40 INFO  LoggingAspect:38 - join point is running logAfterReturning request method: addCustomerReturnVale
+12-06-2023 09:10:40 INFO  LoggingAspect:39 -  method returned value is :Intercepted returning value
+12-06-2023 09:10:40 INFO  LoggingAspect:50 - ## logAround is running ##
+12-06-2023 09:10:40 INFO  LoggingAspect:51 - join point is running after request method: addCustomerAround
+12-06-2023 09:10:40 INFO  LoggingAspect:52 - Method Arguments: [Some message]
+12-06-2023 09:10:40 INFO  LoggingAspect:54 - ## logAround is initiating requested method to proceed for execution ##
+12-06-2023 09:10:40 INFO  LoggingAspect:56 - ## logAround is got back control to execute after requested method execution ##
